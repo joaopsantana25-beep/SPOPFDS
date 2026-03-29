@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/cartas.js"></script>
+
+    <title>Cartas1111</title>
+</head>
+<body onload="rdmcard()">
+    <div class="grid">
+        <div class="card">
+            <div class="face front">
+                <h3>CD: change Directory (mudar diretório)</h3>
+                <p>Usado para navegar entre diretórios no terminal linux</p>
+                <p>Seu principal parametro é o nome do diretório para o qual se deseja navegar</p>
+                <p>Alguns caracteres tem funções especiais associadas ao comando CD</p>
+                <p>Como por exemplo, o caracter .. que é utilizado para acessar o diretório pai do diretório atual</p>
+                <ul>
+                    <li>cd .. : Acessa o diretório pai do diretório atual</li>
+                    <li>cd ~ : Acessa o diretório home do usuário</li>
+                    <li>cd - : Acessa o diretório anterior</li>
+                    <li>cd / : Acessa o diretório raiz do sistema</li>
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>    
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>MKDIR: make directory (criar diretório)</h3> 
+                <p>Usado para criar novos diretórios no sistema Linux</p> 
+                <p>Seu principal parâmetro é o nome do diretório que se deseja criar</p> 
+                <p>Pode incluir opções para criar múltiplos diretórios ou estruturas completas</p> 
+                <ul> 
+                    <li>mkdir nome : Cria um diretório com o nome especificado</li> 
+                    <li>mkdir dir1 dir2 : Cria múltiplos diretórios</li> 
+                    <li>mkdir -p dir/subdir : Cria diretórios aninhados</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>CLEAR: limpar terminal</h3> 
+                <p>Usado para limpar a tela do terminal</p> 
+                <p>Não possui parâmetros obrigatórios</p> 
+                <p>Apenas remove o conteúdo visível da tela</p> 
+                <ul> <li>clear : Limpa o terminal</li> </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>MV: move (mover/renomear arquivos)</h3> 
+                <p>Usado para mover ou renomear arquivos e diretórios</p> 
+                <p>Seus principais parâmetros são o arquivo de origem e o destino</p> 
+                <p>Pode ser usado tanto para mover quanto para renomear</p> 
+                <ul> 
+                    <li>mv arquivo destino : Move o arquivo para outro local</li> 
+                    <li>mv nome_antigo nome_novo : Renomeia o arquivo</li> 
+                    <li>mv -i : Solicita confirmação antes de sobrescrever</li> 
+                </ul>   
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="face front">
+                <h3>CP: copy (copiar arquivos)</h3> 
+                <p>Usado para copiar arquivos e diretórios</p> 
+                <p>Seus principais parâmetros são a origem e o destino</p> 
+                <p>Possui opções para cópia recursiva</p> 
+                <ul> 
+                    <li>cp arquivo destino : Copia um arquivo</li> 
+                    <li>cp -r pasta destino : Copia diretórios recursivamente</li> 
+                    <li>cp -i : Solicita confirmação antes de sobrescrever</li> 
+                </ul>
+            </div> 
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>   
+        </div>
+        
+        <div class="card">
+            <div class="face front">
+                <h3>NANO: editor de texto</h3> 
+                <p>Usado para editar arquivos de texto diretamente no terminal</p> 
+                <p>Seu principal parâmetro é o nome do arquivo</p> 
+                <p>Possui atalhos de teclado para salvar e sair</p> 
+                <ul> 
+                    <li>nano arquivo.txt : Abre ou cria um arquivo</li> 
+                    <li>Ctrl + O : Salva o arquivo</li> 
+                    <li>Ctrl + X : Sai do editor</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>       
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>PING: testar conectividade de rede</h3> 
+                <p>Usado para verificar a comunicação com outro dispositivo na rede</p> 
+                <p>Seu principal parâmetro é o endereço IP ou domínio</p> 
+                <p>Envia pacotes e mede o tempo de resposta</p> 
+                <ul> 
+                    <li>ping google.com : Testa conexão com um site</li> 
+                    <li>ping -c 4 endereço : Limita o número de pacotes enviados</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>    
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>FIND: buscar arquivos</h3> 
+                <p>Usado para localizar arquivos e diretórios no sistema</p> 
+                <p>Seu principal parâmetro é o caminho e o nome do arquivo</p> 
+                <p>Permite buscas avançadas com filtros</p> 
+                <ul> 
+                    <li>find . -name arquivo.txt : Busca pelo nome</li> 
+                    <li>find / -type d : Busca diretórios</li> 
+                    <li>find . -size +10M : Busca arquivos maiores que 10MB</li>
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>CAT: concatenar/exibir arquivos</h3> 
+                <p>Usado para exibir o conteúdo de arquivos no terminal</p> 
+                <p>Também pode ser usado para concatenar arquivos</p> 
+                <p>É um comando simples e muito utilizado</p> 
+                <ul> 
+                    <li>cat arquivo.txt : Exibe o conteúdo</li> 
+                    <li>cat arq1 arq2 : Junta conteúdos</li> 
+                    <li>cat > arquivo : Cria/edita um arquivo</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>CHMOD: change mode (alterar permissões)</h3> 
+                <p>Usado para modificar as permissões de arquivos e diretórios no Linux</p> 
+                <p>Seu principal parâmetro define quais permissões serão atribuídas</p> 
+                <p>As permissões podem ser representadas por letras (r, w, x) ou números (chmod numérico)</p> 
+                <ul> 
+                    <li>chmod 777 arquivo : Concede todas as permissões (leitura, escrita e execução)</li> 
+                    <li>chmod 755 arquivo : Permissão total para o dono e leitura/execução para outros</li> 
+                    <li>chmod +x arquivo : Adiciona permissão de execução</li> 
+                    <li>chmod -w arquivo : Remove permissão de escrita</li> 
+                    <li>chmod u+x arquivo : Adiciona execução para o dono (user)</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>SU: switch user (trocar usuário)</h3> 
+                <p>Usado para alternar entre usuários no sistema Linux</p> 
+                <p>Seu principal parâmetro é o nome do usuário que se deseja acessar</p> 
+                <p>Quando utilizado sem parâmetros, tenta acessar o usuário root</p> 
+                <ul> 
+                    <li>su : Alterna para o usuário root</li> 
+                    <li>su usuario : Alterna para outro usuário</li> 
+                    <li>su - : Carrega o ambiente completo do usuário (login)</li> 
+                    <li>su - usuario : Alterna para outro usuário com ambiente completo</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+        <div class="card">
+            <div class="face front">
+                <h3>IP: gerenciar rede</h3> 
+                <p>Usado para visualizar e configurar interfaces de rede</p> 
+                <p>Substitui comandos antigos como ifconfig</p> 
+                <p>Possui diversos subcomandos para diferentes funções</p> 
+                <ul> 
+                    <li>ip a : Mostra endereços IP</li> 
+                    <li>ip link : Mostra interfaces de rede</li> 
+                    <li>ip route : Exibe rotas de rede</li> 
+                </ul>
+            </div>
+            <div class="face back">
+                <img src="imagens/linux.png" alt="linux">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
