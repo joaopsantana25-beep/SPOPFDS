@@ -1,0 +1,9 @@
+ESLint
+Prettier - Code formatter
+Live Server
+JavaScript (ES6) code snippets
+HTML CSS Support
+Auto Rename Tag
+Path Intellisense
+GitLens
+Javascript Runner
